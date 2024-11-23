@@ -1,5 +1,4 @@
-import kaboom from './node_modules/kaboom';
-import { loadAssets } from './assetLoader';
+import kaboom from 'kaboom';
 
 kaboom ({
     width: 1280,
