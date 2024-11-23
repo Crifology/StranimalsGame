@@ -1,5 +1,3 @@
-import loadAssets from "./assetLoader";
-
 kaboom ({
     width: 1280,
     height: 720,
