@@ -1,4 +1,5 @@
 import kaboom from 'kaboom';
+import { loadAssets } from './assetLoader';
 
 kaboom ({
     width: 1280,
