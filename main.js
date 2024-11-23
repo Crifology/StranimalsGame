@@ -1,4 +1,4 @@
-import { kaboom, setBackground, scene, go } from 'kaboom';
+import kaboom from './node_modules/kaboom';
 import { loadAssets } from './assetLoader';
 
 kaboom ({
