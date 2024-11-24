@@ -139,39 +139,39 @@ function setWorld(worldState) {
       body({ isStatic: true }),
       pos(100, 700),
       scale(4),
-      "Shiela",
+      "jack",
     ]);
   
-    const spiderMon = add([
+    const krauserMon = add([
       sprite("mini-mons"),
       area(),
       body({ isStatic: true }),
       pos(400, 300),
       scale(4),
-      "Krauser",
+      "krauser",
     ]);
-    spiderMon.play("spider");
-    spiderMon.flipX = true;
+    krauserMon.play("krauser");
+    krauserMon.flipX = true;
   
-    const centipedeMon = add([
+    const sheilaMon = add([
       sprite("mini-mons"),
       area(),
       body({ isStatic: true }),
       pos(100, 100),
       scale(4),
-      "Jack",
+      "sheila",
     ]);
-    centipedeMon.play("centipede");
+    sheilaMon.play("sheila");
   
-    const grassMon = add([
+    const andyMon = add([
       sprite("mini-mons"),
       area(),
       body({ isStatic: true }),
       pos(900, 570),
       scale(4),
-      "Andy",
+      "andy",
     ]);
-    grassMon.play("grass");
+    andyMon.play("andy");
   
     add([
       sprite("npc"),
@@ -330,8 +330,8 @@ function setWorld(worldState) {
       });
     }
   
-    onCollideWithPlayer("cat", player, worldState);
+    onCollideWithPlayer("jack", player, worldState);
     onCollideWithPlayer("spider", player, worldState);
-    onCollideWithPlayer("centipede", player, worldState);
-    onCollideWithPlayer("grass", player, worldState);
+    onCollideWithPlayer("sheila", player, worldState);
+    onCollideWithPlayer("andy", player, worldState);
   }
