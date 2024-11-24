@@ -174,7 +174,7 @@ function setWorld(worldState) {
     grassMon.play("grass");
   
     add([
-      sprite("Laura"),
+      sprite("npc"),
       scale(4),
       pos(600, 700),
       area(),
