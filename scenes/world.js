@@ -150,7 +150,7 @@ function setWorld(worldState) {
       scale(4),
       "Krauser",
     ]);
-    spiderMon.play("Krauser");
+    spiderMon.play("spider");
     spiderMon.flipX = true;
   
     const centipedeMon = add([
@@ -161,7 +161,7 @@ function setWorld(worldState) {
       scale(4),
       "Jack",
     ]);
-    centipedeMon.play("Jack");
+    centipedeMon.play("centipede");
   
     const grassMon = add([
       sprite("mini-mons"),
@@ -171,7 +171,7 @@ function setWorld(worldState) {
       scale(4),
       "Andy",
     ]);
-    grassMon.play("Andy");
+    grassMon.play("grass");
   
     add([
       sprite("Laura"),
