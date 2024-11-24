@@ -331,7 +331,7 @@ function setWorld(worldState) {
     }
   
     onCollideWithPlayer("jack", player, worldState);
-    onCollideWithPlayer("spider", player, worldState);
+    onCollideWithPlayer("krauser", player, worldState);
     onCollideWithPlayer("sheila", player, worldState);
     onCollideWithPlayer("andy", player, worldState);
   }
