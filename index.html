@@ -4,10 +4,13 @@
         <title>Stranimals: A Living Hell</title>
     </head>
     <body style="width: 100%; height: 100%; margin: 0px;">
-        <script type="module" src="assetLoader.js"></script>
-        <script type="module" src="scenes/world.js"></script>
-        <script type="module" src="scenes/battle.js"></script>
-        <script type="module" src="main.js"></script>
+        <script type="module">
+            import kaboom from "https://cdn.jsdelivr.net/npm/kaboom@0.5.1/dist/kaboom.js";
+        </script>  
+        <script src="assetLoader.js"></script>
+        <script src="scenes/world.js"></script>
+        <script src="scenes/battle.js"></script>
+        <script src="main.js"></script>
         <canvas width="1344" height="754" tabindex="0" style="outline: none; cursor: default; width: 896px; height: 503px"></canvas>
     </body>
 </html>
