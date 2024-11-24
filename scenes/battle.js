@@ -124,18 +124,17 @@ function setBattle(worldState) {
       if (playerMon.fainted || enemyMon.fainted) return;
   
       if (phase === "player-selection") {
-        content.text = "> Request Training";
-        content.text = "> Reviews Job Tasks";
+        content.text = "> Request Training /n >Review Job Tasks";
         phase = "player-turn";
         return;
       }
   
       if (phase === "enemy-turn") {
-        content.text = worldState.enemyName.toUpperCase() + " counter-rebukes!";
+        content.text = worldState.enemyName.toUpperCase() + " turns a blind-eye!!";
         const damageDealt = Math.random() * 230;
   
         if (damageDealt > 150) {
-          content.text = "It's super effective!";
+          content.text = "They ghosted you completely...";
         }
   
         reduceHealth(playerMonHealthBar, damageDealt);
@@ -149,9 +148,9 @@ function setBattle(worldState) {
         const damageDealt = Math.random() * 230;
   
         if (damageDealt > 150) {
-          content.text = "They heard you... interesting...";
+          content.text = "They responded to your email...";
         } else {
-          content.text = "NEW HIRE used Request Training Material!";
+          content.text = " is already burning out...";
         }
   
         reduceHealth(enemyMonHealthBar, damageDealt);
@@ -184,7 +183,7 @@ function setBattle(worldState) {
         content.text = worldState.enemyName.toUpperCase() + " fainted!";
         enemyMon.fainted = true;
         setTimeout(() => {
-          content.text = "NEW HIRE survived..";
+          content.text = "NEW HIRE completed work...";
         }, 1000);
         setTimeout(() => {
           worldState.faintedMons.push(worldState.enemyName);
@@ -194,10 +193,10 @@ function setBattle(worldState) {
   
       if (playerMonHealthBar.width < 0 && !playerMon.fainted) {
         makeMonDrop(playerMon);
-        content.text = "NEW HIRE fired!!!";
+        content.text = "NEW HIRE fired!";
         playerMon.fainted = true;
         setTimeout(() => {
-          content.text = "You rush to get NEW HIRE another interview!!";
+          content.text = "You rush NEW HIRE to Mass General Hospital...";
         }, 1000);
         setTimeout(() => {
           worldState.playerPos = vec2(500, 700);
