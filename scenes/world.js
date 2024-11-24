@@ -139,7 +139,7 @@ function setWorld(worldState) {
       body({ isStatic: true }),
       pos(100, 700),
       scale(4),
-      "Sheila",
+      "Shiela",
     ]);
   
     const spiderMon = add([
@@ -330,8 +330,8 @@ function setWorld(worldState) {
       });
     }
   
-    onCollideWithPlayer("Sheila", player, worldState);
-    onCollideWithPlayer("Krauser", player, worldState);
-    onCollideWithPlayer("Jack", player, worldState);
-    onCollideWithPlayer("Andy", player, worldState);
+    onCollideWithPlayer("cat", player, worldState);
+    onCollideWithPlayer("spider", player, worldState);
+    onCollideWithPlayer("centipede", player, worldState);
+    onCollideWithPlayer("grass", player, worldState);
   }
