@@ -1,5 +1,3 @@
-import kaboom from "./node_modules/kaboom/dist/kaboom";
-
 kaboom ({
     width: 1280,
     height: 720,
