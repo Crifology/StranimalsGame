@@ -150,7 +150,7 @@ function setBattle(worldState) {
         if (damageDealt > 150) {
           content.text = "They responded to your email...";
         } else {
-          content.text = " is already burning out...";
+          content.text = "NEW HIRE is already burning out...";
         }
   
         reduceHealth(enemyMonHealthBar, damageDealt);
