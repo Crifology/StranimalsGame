@@ -124,7 +124,7 @@ function setBattle(worldState) {
       if (playerMon.fainted || enemyMon.fainted) return;
   
       if (phase === "player-selection") {
-        content.text = "> Request Training /n >Review Job Tasks";
+        content.text = "> Request Training";
         phase = "player-turn";
         return;
       }
@@ -180,10 +180,10 @@ function setBattle(worldState) {
   
       if (enemyMonHealthBar.width < 0 && !enemyMon.fainted) {
         makeMonDrop(enemyMon);
-        content.text = worldState.enemyName.toUpperCase() + " fainted!";
+        content.text = worldState.enemyName.toUpperCase() + " stole NEW HIRE's idea and ran back to office!!";
         enemyMon.fainted = true;
         setTimeout(() => {
-          content.text = "NEW HIRE completed work...";
+          content.text = "NEW HIRE completed the work...";
         }, 1000);
         setTimeout(() => {
           worldState.faintedMons.push(worldState.enemyName);
